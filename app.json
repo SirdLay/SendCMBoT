@@ -1,0 +1,43 @@
+{
+    "name": "SendCM Uploader",
+    "description": "A telegram bot that can upload telegram media files to send.cm maintained by SirdLay",
+    "logo": "https://send.cm/static/img/logo.png",
+    "keywords": [
+        "SendCM",
+        "Uploader",
+        "Telegram Bot"
+    ],
+    "website": "https://telegram.me/SirdLay",
+    "repository": "https://telegram.me/SirdLay",
+    "success_url": "https://telegram.me/SirdLay",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Your Telegram Bot Token from @BotFather",
+            "value": ""
+        },
+        "APP_ID": {
+            "description": "Your APP ID from my.telegram.org",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API HASH from my.telegram.org",
+            "value": ""
+        },
+        "UPDATES_CHANNEL": {
+            "description": "Your Update Channel Username without '@'",
+            "value": ""
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "Echo"
+        }
+    }
+}
